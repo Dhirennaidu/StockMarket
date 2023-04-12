@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registation form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <font size="8" color="blue"><strong>Registation form</strong></font>
+    <div class="alert alert-danger"role="alert" style="width:100%;height: 30px;display: none;background-color: red;color:rgb(255, 255, 255);" id="alert1">
+        
+    </div>
+    <div class="container">
+       
+    <form action="index.php" method="post" id="form">
+      <div class="row">
+        <label for="name"><p>Name</p></label>
+       <input type="text" id="name" name="name" placeholder="Enter your full name">
+       </div>
+       <div class="row">
+       <label for="fname"><p>Fther Name</p></label>
+       <input type="text" id="fname" name="fname"placeholder="Enter a Father name">
+       
+       </div>
+       <div class="row">
+       <label for="mname"><p>Mother Name</p></label>
+       <input type="text" id="mname" name="mname" placeholder="Entre a Mother name">
+       
+    </div>
+<div class="row">
+<label for="gn"><p>gender(male/female)</p></label>
+<select id="gn" name="gn">
+    <option class="male">Male</option>
+    <option class="female">Female</option>
+    <option>other</option>
+</select>
+
+</div>
+       <div class="row">
+       <label for="pin"><p>Pin code</p></label>
+       <input type="text" id="pin" name="pin" maxlength="6" placeholder="Enter your pin code">
+       
+    </div>
+<div class="row">
+<label for="dateb"><p>Date of Birth<p></label>
+<input type="date" id="dateb"  name="dateb" placeholder="Enter a join date">
+</div>
+       <div class="row">
+        <label for="vname"><p>Village/City</p></label>
+        <input type="text" id="vname" name="vname" maxlength="50" placeholder="Enter your Vilage/city name">
+        
+        </div>
+       <div class="row">
+       <label for="pay"><p>Payment</p></label>
+       <input type="number" id="pay" maxlength="4" name="pay" placeholder="payment registation fees=5000-/-">
+      
+    </div>
+<div class="row">
+<label for="date"><p>Payment Date<p></label>
+<input type="date" id="date"  name="date" placeholder="Enter a join date">
+
+</div>
+       <div class="row">
+       <label for="mobile"><p>Mobile</p></label>
+       <input type="text" id="mobile" maxlength="10" name="mobile" placeholder="Enter your mobile number">
+    </div>
+       <div class="row">
+       <label for="pass"><p>Create Password</p></label>
+       <input type="password" id="pass" maxlength="10" name="pass" placeholder="Enter a password">
+       
+    </div>
+    
+    <br>
+       <div class="row">
+       <button onclick="formvalidation()"  class="btn">Registation and Signup</button>
+       <button  type="reset" class="btn" style="background-color:blue;">reset</button>
+    </div>
+      </div>  
+    </form>
+    </div>
+</body>
+<script src="Rolandjs.js"></script>
+</html>
